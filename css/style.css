@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+/* This is a comment */
+
+/* CSS Syntax:
+
+selector {
+  property: value;
+  property: value;
+}
+
+*/
+
+/* Type selector */
+
+p { /* select all <p> */
+  /*font-size: 16px; /* 16px, ?pt, 100%, 1em */
+  /*line-height: 1.5em;*/
+  font: 16px/1.5em 'Indie Flower', cursive;
+}
+
+figcaption {
+  /*font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, "New Times Roman", serif;*/
+  font: normal 0.75em/1.5em 'Barrio', cursive, "New Times Roman", serif;
+  color: grey;
+  text-align: right;
+}
+
+.milk-text { /* (applied to as many elements as you like) */
+  font: bold 2.6em 'Barrio', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+/* ID selector (apply to one unique element per page) */
+
+#logo {
+  background: aqua;
+}
+
+/* Descendent Selector */
+
+#logo h1 { /* selects only <h1> if inside the id="logo" */
+  font-family: 'Barrio', cursive;
+}
+
+#logo h2 {
+  font-family: 'Indie Flower', cursive;
+}
+
+/* Psuedo Selector */
+
+#details a:link, #details a:visited {
+  color: black;
+}
+
+#details a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
